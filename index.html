@@ -6,8 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="logo-container">
+            <div class="brand">
+                <img src="assets/logo.jpg" alt="logo" width="175px">
+                <p id="brand-name">Éxelex*</p>
+            </div>
+            <div id="credits"><span>Photo by <a class="credits" href="https://unsplash.com/es/@mischievous_penguins?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Casey Horner</a> on <a class="credits" href="https://unsplash.com/es/fotos/timelapse-photography-of-warped-lines-RmoWqDCqN2E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</span></a></div>
+        </div>
+        <div class="form-container">
+            <div class="padding">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+Sign up now to get started.</p>
+                <p style="padding-top: 10px">You know you want to.</p>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <div class="form">
+                        <p style="padding-left: 20px; padding-top: 20px;">Let´s do this!</p>
+                        <div class="row">
+                            <div class="input-label">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" name="first-name" id="first-name" required>
+                            </div>
+                            <div class="input-label">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" name="last-name" id="last-name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-label">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="input-label">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="number" name="phone-number" id="phone-number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-label">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="The password must have at least 1 uppercase letter, 1 lowercase letter and 1 number, and a minimum length of 8 characters." required>
+                            </div>
+                            <div class="input-label">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="The password must have at least 1 uppercase letter, 1 lowercase letter and 1 number, and a minimum length of 8 characters." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padding">
+                        <button type="submit">Create Account</button>
+                        <p style="padding-top: 30px;">¿Already have an account? <a href="#" id="log-in">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <a id="body-bg-credit" class="credits" href="https://www.freepik.com/free-ai-image/fantasy-style-galaxy-background_122459865.htm#page=2&query=orange%20space&position=35&from_view=keyword&track=ais_user&uuid=cead8cd2-5d5c-4cf0-983c-ebb3783155c7">Image by freepik</a>
 </body>
 </html>
